@@ -1,14 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Users from '../components/Users'
-import Chats from '../components/Chats'
+import Info from '../components/Info'
 
 const Sidebar = () => {
   return (
     <div className='sidebar'>
       <Navbar />
-      <Users />
-      <Chats />
+      <Info />
     </div>
   )
 }
