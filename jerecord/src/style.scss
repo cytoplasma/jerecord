@@ -61,6 +61,7 @@ body {
     }
     label {
       cursor: pointer;
+      color: gainsboro;
     }
     button {
       padding: 15px;
@@ -96,7 +97,27 @@ body {
     .sidebar {
       flex: 1;
       background-color: #1e2124;
-      
+      .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+          height: 250px;
+          width: 250px;
+          border-radius: 50px;
+          object-fit: cover;
+          padding: 10px;
+        }
+        a {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+        p{
+          text-align: center;
+        }
+      }
       // user serction
       .navbar {
         display: flex;
@@ -129,6 +150,7 @@ body {
           }
         }
       }
+      
     }
     .chat {
       flex: 2;
@@ -152,6 +174,26 @@ body {
       .messages{
         padding: 18px 0;
         height: calc(100% - 160px);
+        overflow: auto;
+        .message{
+          padding: 10px;
+          .message-wrapper{
+            display: flex;
+            .message-content{
+              padding-left: 10px;
+              .message-name{
+                font-weight: 700;
+                span{
+                  color: gainsboro;
+                  font-size: 10px;
+                  padding-left: 10px;
+                }
+              }
+              .message-content{
+              }
+            }
+          }
+        }
       }
       .input{
         display: flex;
@@ -160,7 +202,12 @@ body {
         input{
           width: 100%;
           height: 50px;
-          
+          color: black;
+          outline: none;
+        }
+        button{
+          background-color: #7289da;
+          padding: 20px;
         }
       }
       .chat-pfp{

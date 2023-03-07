@@ -4,7 +4,7 @@ const Input = () => {
   return (
     <div className="input">
       <input type="text" placeholder="Type your message" />
-      <button>send</button>
+      <button>↑ </button>
     </div>
   );
 };
