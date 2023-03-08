@@ -6,7 +6,7 @@ const Chat = () => {
   return (
     <div className="chat">
       <div className="chatInfo">
-        <h4>Welcome to jerecord!</h4>
+        <h4>welcome to jerecord!</h4>
         <div className="trackers">
           <span>members: 1,000,000</span>
           <span>messages: 1,000,000</span>

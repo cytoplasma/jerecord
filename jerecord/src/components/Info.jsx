@@ -1,4 +1,5 @@
 import React from "react";
+import { SocialIcon } from 'react-social-icons';
 
 const Users = () => {
   return (
@@ -9,7 +10,8 @@ const Users = () => {
       />
       <div className="socials-container">
         {/* incorporate icons later on */}
-        <a href="#">Linkedin</a>
+        <SocialIcon url="https://github.com/cytoplasma" />
+        <SocialIcon url="https://linkedin.com"/>
         <a href="#">Github</a>
         <a href="#">Twitter</a>
         <a href="#">Discord</a>
