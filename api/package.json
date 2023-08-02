@@ -1,11 +1,10 @@
 {
-  "name": "backend",
+  "name": "api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd server && npm run dev && dc client && npm run start",
-    "install": "cd server && npm i && cd client && npm i"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
