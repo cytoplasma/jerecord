@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start"
+    "start": "cd server && npm run dev && dc client && npm run start",
+    "install": "cd server && npm i && cd client && npm i"
   },
   "author": "",
   "license": "ISC",
