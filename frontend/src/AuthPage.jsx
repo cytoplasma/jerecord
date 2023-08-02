@@ -7,7 +7,7 @@ const AuthPage = (props) => {
       const { value } = e.target[0];
       axios.post(
         'http://localhost:3001/authenticate',
-        {useranme: value}
+        {username: value}
       )
       .then (r => props.onAuth({ ...r.data, secret: value }))
       .catch(e => console.log('error', e))
@@ -16,15 +16,15 @@ const AuthPage = (props) => {
     return (
       <div className="background">
         <form onSubmit={onSubmit} className="form-card">
-          <div className="form-title">Welcome 👋</div>
+          <div className="form-title">welcome</div>
   
-          <div className="form-subtitle">Set a username to get started</div>
+          <div className="form-subtitle">enter a username to get started</div>
   
           <div className="auth">
-            <div className="auth-label">Username</div>
+            <div className="auth-label">username</div>
             <input className="auth-input" name="username" />
             <button className="auth-button" type="submit">
-              Enter
+              enter
             </button>
           </div>
         </form>
